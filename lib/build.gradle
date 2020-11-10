@@ -14,7 +14,7 @@ def BINTRAY_ORGINIZATION="darkosinc"
 def ISSUE_URL=""
 def SITE_URL=""
 def VCS_URL=""
-def LIBRARY_VERSION_NAME="1.0.0"
+def LIBRARY_VERSION_NAME="1.0.1"
 
 group GROUP_ID
 version LIBRARY_VERSION_NAME
@@ -39,7 +39,9 @@ dependencies{
 }
 
 kotlin {
-    android()
+    android {
+        publishLibraryVariants("release", "debug")
+    }
     sourceSets {
         commonMain {
             dependencies {
