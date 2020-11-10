@@ -2,3 +2,4 @@ rootProject.name = 'navigator'
 
 
 enableFeaturePreview('GRADLE_METADATA')
+include(":lib")
